@@ -86,7 +86,8 @@ let s:is_dark=(&background == 'dark')
 let s:gb = {}
 
 " fill it with absolute colors
-let s:gb.dark0_hard  = ['#1B1B1B', 234]     " 29-32-33
+let s:gb.dark_hard   = ['#1B1B1B', 234]     " 27-27-27, my own dark background
+let s:gb.dark0_hard  = ['#1D2021', 234]     " 29-32-33
 let s:gb.dark0       = ['#282828', 235]     " 40-40-40
 let s:gb.dark0_soft  = ['#32302f', 236]     " 50-48-47
 let s:gb.dark1       = ['#3c3836', 237]     " 60-56-54
@@ -172,7 +173,7 @@ if s:is_dark
   if g:gruvbox_contrast_dark == 'soft'
     let s:bg0  = s:gb.dark0_soft
   elseif g:gruvbox_contrast_dark == 'hard'
-    let s:bg0  = s:gb.dark0_hard
+    let s:bg0  = s:gb.dark_hard
   endif
 
   let s:bg1  = s:gb.dark1
